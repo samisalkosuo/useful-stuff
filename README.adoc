@@ -1,0 +1,14 @@
+= useful-stuff
+:toc: preamble
+:toc-title:
+:imagesdir: images 
+
+Some useful stuff related to &lt;insert something>.
+
+
+== Tools
+
+* https://github.com/mendhak/docker-http-https-echo[docker-http-https-echo] - Docker image that echoes request data as JSON; listens on HTTP/S, useful for debugging.
+** `docker run -p 8083:80 -p 8443:443 --rm -t mendhak/http-https-echo`
+* https://github.com/nicolaka/netshoot[Netshoot] - a Docker + Kubernetes network trouble-shooting swiss-army container.
+* https://github.com/samisalkosuo/kubeterminal[KubeTerminal] - kubectl helper tool (I did this! :-).
