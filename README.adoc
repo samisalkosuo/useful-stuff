@@ -12,3 +12,15 @@ Some useful stuff related to &lt;insert something>.
 ** `docker run -p 8083:80 -p 8443:443 --rm -t mendhak/http-https-echo`
 * https://github.com/nicolaka/netshoot[Netshoot] - a Docker + Kubernetes network trouble-shooting swiss-army container.
 * https://github.com/samisalkosuo/kubeterminal[KubeTerminal] - kubectl helper tool (I did this! :-).
+
+== Curl examples
+
+* POST data - application/x-www-form-urlencoded 
+** `curl -d "param1=value1&param2=value2" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:8083`
+** `curl -d "@data.txt" -X POST http://localhost:8083`
+* POST data - application/json
+** `curl -d '{"key1":"value1","key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:8083`
+** `curl -d "@data.json" -X POST http://localhost:3000/data`
+* Post plain text
+** `curl -H "Content-Type: text/plain" --data-binary "@text.txt" http://127.0.0.1:8083`
+** `cat text.txt | curl -H "Content-Type: text/plain" --data-binary @- http://127.0.0.1:8083`
