@@ -5,6 +5,14 @@
 
 Some useful stuff related to &lt;insert something>.
 
+== AsciiDoc
+
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
+* https://github.com/asciidoctor/docker-asciidoctor[Asciidoctor Docker Container]
+** `docker pull asciidoctor/docker-asciidoctor`
+** Create PDF
+*** `docker run --rm -v %cd%:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf README.adoc` (Windows)
+*** `docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf README.adoc` (Linux/Mac)
 
 == Tools
 
