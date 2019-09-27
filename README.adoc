@@ -40,3 +40,6 @@ Python 3 examples.
 
 * Pretty print JSON
 ** `python -m json.tool < samples/data.json`
+* HTTP Server
+** `python -m http.server`
+** Python 2: `python -m SimpleHTTPServer`
