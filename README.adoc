@@ -20,6 +20,7 @@ Some useful stuff related to &lt;insert something>.
 ** `docker run -it --rm -p 8083:80 -p 8443:443 mendhak/http-https-echo`
 * https://github.com/nicolaka/netshoot[Netshoot] - a Docker + Kubernetes network trouble-shooting swiss-army container.
 * https://github.com/samisalkosuo/kubeterminal[KubeTerminal] - kubectl helper tool (I did this! :-).
+* https://github.com/samisalkosuo/cors-test[CORS testing] - CORS testing from localhost.
 
 == Curl examples
 
