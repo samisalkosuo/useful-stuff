@@ -25,6 +25,10 @@ Some useful stuff related to &lt;insert something>.
 
 == Curl examples
 
+* Get your public IP address info
+** `curl https://ipinfo.io/`
+* Get your any IP address info
+** `curl https://ipinfo.io/129.42.38.10`
 * POST data - application/x-www-form-urlencoded 
 ** `curl -d "param1=value1&param2=value2" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:8083`
 ** `curl -d "@samples/data.txt" -X POST http://localhost:8083`
