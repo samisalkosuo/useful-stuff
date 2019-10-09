@@ -48,3 +48,16 @@ Python 3 examples.
 * HTTP Server
 ** `python -m http.server`
 ** Python 2: `python -m SimpleHTTPServer`
+
+== Bash
+
+* Check input arg using if
+
+[source,bash]
+----
+if [[ "$1" == "" ]]; then
+  echo "Argument missing."
+  echo "Usage: $0 <ARG>."
+  exit 1
+fi
+----
