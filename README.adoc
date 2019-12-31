@@ -38,6 +38,8 @@ Some useful stuff related to &lt;insert something>.
 * Post plain text
 ** `curl -H "Content-Type: text/plain" --data-binary "@samples/text.txt" http://127.0.0.1:8083`
 ** `cat samples/text_fi_1k.txt | curl -H "Content-Type: text/plain" --data-binary @- http://127.0.0.1:8083`
+* Check open port
+** `curl -v telnet://127.0.0.1:443`
 
 == Python
 
