@@ -1,0 +1,13 @@
+= Python
+
+== Pretty print JSON
+
+```
+python -m json.tool < samples/data.json
+```
+
+== HTTP server
+
+```
+python -m http.server
+```

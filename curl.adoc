@@ -1,0 +1,51 @@
+= Curl
+
+:toc: 
+:toc-title:
+
+== Get  IP address info
+
+* Your IP:
+
+```
+curl https://ipinfo.io/
+```
+
+* Any IP:
+
+```
+curl https://ipinfo.io/129.42.38.10
+```
+
+== POST data
+
+* application/x-www-form-urlencoded 
+```
+curl -d "param1=value1&param2=value2" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:8083`
+```
+
+```
+curl -d "@sample-files/data.txt" -X POST http://localhost:8083
+```
+
+* application/json
+```
+curl -d '{"key1":"value1","key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:8083`
+```
+```
+curl -d "@sample-files/data.json" -X POST http://localhost:3000/data
+```
+
+* text/plain
+
+```
+curl -H "Content-Type: text/plain" --data-binary "@sample-files/text.txt" http://127.0.0.1:8083
+```
+```
+cat sample-files/text_fi_1k.txt | curl -H "Content-Type: text/plain" --data-binary @- http://127.0.0.1:8083
+```
+== Check open port
+
+```
+curl -v telnet://127.0.0.1:443
+```

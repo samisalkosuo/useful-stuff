@@ -1,0 +1,49 @@
+= Bash
+:toc: 
+:toc-title:
+
+== if-clause to check input arg
+
+```
+if [[ "$1" == "" ]]; then
+  echo "Argument missing."
+  echo "Usage: $0 <ARG>."
+  exit 1
+fi
+```
+
+== For loop
+
+```
+for i in {1..10}
+do
+  echo i=$i
+done
+```
+
+```
+VAR="hello world now"
+
+for w in $VAR
+do
+  echo $w
+done
+```
+
+== waitFor-function
+
+```
+function waitFor
+{
+  MAX=$1
+  echo "Sleeping for $MAX seconds..."
+  for ((i=1; i<=$MAX; i++))
+  do
+    printf '\rSleeping %d/%d' $i $MAX
+    sleep 1
+  done
+  echo ""
+
+}
+```
+
